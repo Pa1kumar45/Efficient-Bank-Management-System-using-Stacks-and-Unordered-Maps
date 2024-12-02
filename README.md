@@ -35,12 +35,15 @@ Stacks are ideal for dynamically adding new transactions in the beginning follow
 Transaction and TransactionStack Classes Transaction: 
 
 1)Transaction: Represents a bank transaction, including the type (Deposit, Withdrawal, Transfer, or Received), amount, recipient name, and account number (for transfers).
+
 2)TransactionStack: Manages a stack of transactions, with methods to add transactions (push), display them, and save them to a file.
+
 Account Class:
 Attributes: Includes account holder details, balance, PIN, and a transaction history (managed using TransactionStack).
 
 Key Methods:
 1)deposit and withdraw: For updating balance and logging the transactions.
+
 2)addTransaction: Adds a transaction to the stack.
 3)saveAccountToFile: Saves account details and transaction history to a file.
 4)displayAccount: Displays account details along with transaction history.

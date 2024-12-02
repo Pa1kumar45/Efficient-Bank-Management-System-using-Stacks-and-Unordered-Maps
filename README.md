@@ -5,10 +5,12 @@ This project aims to implement a banking system where account holders can secure
 Account Management : Banks need to manage and access multiple accounts securely and efficiently. 
 Secure Access : The system must ensure secure access to account details, preventing unauthorized access and protecting sensitive information.
 # Background and Motivation
-# Background
+Background
+
 Modern banking systems handle millions of user accounts and transactions.To manage this efficiently, we need to store and access account details quickly and securely. 
 It is essential to maintain a record of all transactions performed by users for accountability and transparency.
-# Motivation
+Motivation
+
 The system needs to prioritize security, ensuring only authorized users can access account details using a token and PIN system. Efficiency is also crucial, with the system needing to perform lookups quickly even with a large number of accounts.
 # General Solution
 Approach
@@ -45,19 +47,31 @@ Key Methods:
 1)deposit and withdraw: For updating balance and logging the transactions.
 
 2)addTransaction: Adds a transaction to the stack.
+
 3)saveAccountToFile: Saves account details and transaction history to a file.
+
 4)displayAccount: Displays account details along with transaction history.
 
 BankSystem Class: 
+
 Manages Multiple Accounts:
+
 Accounts are stored in an unordered_map, using a unique token as the key.
+
 Key Functions:
+
 createAccount: Creates a new account, generating unique tokens and account numbers based on the current time.
+
 accessAccount: Authenticates a user based on token and PIN.
+
 transfer: Handles fund transfers between accounts after validating both sender and receiver details.
-Main Function
+
+Main Function :
+
 User Menu: Provides options to create an account, view details, deposit, withdraw, view transactions, and transfer money.
+
 Unique IDs: Tokens and account numbers are dynamically generated using the current time, ensuring uniqueness.
+
 File Storage: Account details and transactions are saved in a text file for persistence.
 
 # OUTPUT :
